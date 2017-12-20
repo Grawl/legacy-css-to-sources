@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "postcss": "postcss in/*.css -d out",
+    "format": "stylefmt --recursive 'out/*.css'",
+    "start": "npm run postcss && npm run format"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.3",
+    "postcss": "^6.0.14",
+    "postcss-discard-comments": "^2.0.4",
+    "postcss-discard-duplicates": "^2.1.0",
+    "postcss-discard-empty": "^2.1.0",
+    "postcss-merge-rules": "^2.1.2",
+    "postcss-normalize-charset": "^1.1.1",
+    "postcss-unique-selectors": "^2.0.2",
+    "stylefmt": "^6.0.0"
+  }
+}
