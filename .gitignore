@@ -1,4 +1,4 @@
 /node_modules
-/in/*.css
-!/in/test.css
-/out
+/yarn-error.log
+
+/css/*.css

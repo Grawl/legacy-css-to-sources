@@ -1,16 +1,16 @@
 module.exports = {
-  plugins: [
-    require('autoprefixer'),
-    require('postcss-discard-empty'),
-    require('postcss-discard-comments')({
-      remove: comment => !(
-        comment[0] == '*' ||
-        comment[0] == '!'
-      )
-    }),
-    require('postcss-discard-duplicates'),
-    require('postcss-merge-rules'),
-    require('postcss-unique-selectors'),
-    require('postcss-normalize-charset'),
-  ]
+	plugins: [
+		require("autoprefixer")({
+			add: false,
+		}),
+		require("postcss-discard-empty"),
+		require("postcss-discard-duplicates"),
+		require("postcss-discard-overridden"),
+		require("postcss-merge-longhand"),
+		require("postcss-merge-rules"),
+		require("postcss-minify-selectors"),
+		require("postcss-normalize-whitespace"),
+		require("postcss-unique-selectors"),
+		require("postcss-normalize-charset"),
+	],
 }

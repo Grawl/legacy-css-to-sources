@@ -1,0 +1,9 @@
+plugins:
+  - stylelint-color-format
+rules:
+  color-format/format:
+    format: hsl
+  number-leading-zero: always
+  number-no-trailing-zeros: true
+  length-zero-no-unit: true
+  selector-pseudo-element-colon-notation: double
